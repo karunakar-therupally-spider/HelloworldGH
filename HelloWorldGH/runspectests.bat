@@ -1,10 +1,10 @@
-rem @pushd %~dp0
+@pushd %~dp0
 
-rem %windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe "HelloWorldGH.csproj"
+%windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe "HelloWorldGH.csproj"
 
-rem @if ERRORLEVEL 1 goto end
+@if ERRORLEVEL 1 goto end
 
-cd .\packages\SpecRun.Runner.*\tools
+cd ..\packages\SpecRun.Runner.*\tools
 
 @set profile=%1
 @if "%profile%" == "" set profile=Default
