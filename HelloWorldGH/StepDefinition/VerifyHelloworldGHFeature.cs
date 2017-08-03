@@ -29,7 +29,7 @@ namespace HelloWorldGH.StepDefinition
         public void ThenSystemShouldDisplayClientLoginPage()
         {
 
-            fdriver.FindElement(OpenQA.Selenium.By.XPath("//div[@class='row']//h1[starts-with(text(),'Market1')]")).Equals("Marketing Solutions for the World's Best Brands");
+            fdriver.FindElement(OpenQA.Selenium.By.XPath("//div[@class='row']//h1[starts-with(text(),'Market')]")).Equals("Marketing Solutions for the World's Best Brands");
             fdriver.Close();
         }
 
