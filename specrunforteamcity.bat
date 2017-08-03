@@ -1,8 +1,8 @@
 @pushd %~dp0
 
-Rem %windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe "HelloWorldGH.csproj"
+ %windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe "HelloWorldGH.csproj"
 
-rem @if ERRORLEVEL 1 goto end
+ @if ERRORLEVEL 1 goto end
 
 @cd ..\packages\SpecRun.Runner.*\tools
 
